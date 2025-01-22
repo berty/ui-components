@@ -12,11 +12,15 @@ npm install @berty/ui-components
 
 
 ```js
-import { multiply } from '@berty/ui-components';
+import { Button, DefaultTheme, Text, ThemeProvider } from '@berty/ui-components'
 
 // ...
 
-const result = await multiply(3, 7);
+<ThemeProvider theme={theme}>
+    <Button onPress={() => console.log('Button pressed')}>Press me</Button>
+    <Text>Some text</Text>
+</ThemeProvider>
+
 ```
 
 
