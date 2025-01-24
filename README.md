@@ -28,6 +28,10 @@ import { Button, DefaultTheme, Text, ThemeProvider } from '@berty/ui-components'
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 
+## Figma
+
+[Figma for Gnokey Template](https://www.figma.com/design/ZvyQCGf8yJ53UxFNHuheDU/GKM-design-_-UI?node-id=44-959&t=27GIxzjOfQVEzfpi-0)
+
 ## License
 
 MIT

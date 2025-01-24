@@ -14,10 +14,12 @@ export interface Button extends TouchableOpacityProps {
 }
 
 export const Button: React.FC<Button> = props => {
+	const isChildrenString = typeof props.children === 'string'
+
 	return (
 		<ButtonWrapper {...props} $color={props.color} style={[{ borderRadius: 25 }, props.style]}>
 			{props.startIcon ? <StartIconWrapper>{props.startIcon}</StartIconWrapper> : null}
-			<Text.ButtonLabel $color={props.color}>{props.children}</Text.ButtonLabel>
+			{isChildrenString ? <Text.ButtonLabel $color={props.color}>{props.children}</Text.ButtonLabel> : props.children}
 			{props.endIcon ? <EndIconWrapper>{props.endIcon}</EndIconWrapper> : null}
 		</ButtonWrapper>
 	)
