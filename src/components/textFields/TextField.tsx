@@ -4,17 +4,18 @@ import styled, { DefaultTheme } from 'styled-components/native'
 import { FontAwesome } from '@expo/vector-icons'
 
 export type Props = {
-	type: 'password' | 'text'
-	theme: DefaultTheme
+	type?: 'password' | 'text'
 } & TextInputProps
 
-export const TextField: React.FC<Props> = props => {
-	const [isSecureText, setShowSecureText] = React.useState(props.type === 'password')
+type PropsWithTheme = Props & { theme: DefaultTheme }
+
+export const TextField: React.FC<Props> = ({ type = 'text', ...rest }) => {
+	const [isSecureText, setShowSecureText] = React.useState(type === 'password')
 
 	return (
 		<Container>
-			<TextFieldStyled {...props} secureTextEntry={isSecureText} />
-			{props.type === 'password' ? (
+			<TextFieldStyled {...rest} secureTextEntry={isSecureText} />
+			{type === 'password' ? (
 				<ToggleIcon>
 					<FontAwesome size={28} name={isSecureText ? 'eye-slash' : 'eye'} onPress={() => setShowSecureText(prev => !prev)} />
 				</ToggleIcon>
@@ -35,12 +36,15 @@ const Container = styled.View<Props>`
 	background-color: ${({ theme }: { theme: DefaultTheme }) => theme.textinputs?.background};
 `
 
-const TextFieldStyled = styled.TextInput.attrs((props: Props) => ({
+const TextFieldStyled = styled.TextInput.attrs((props: PropsWithTheme) => ({
 	placeholderTextColor: props.theme.textinputs?.placeholder.color || props.theme.colors.black,
 }))`
 	flex: 1;
 	height: 40px;
 	width: 100%;
+	font-weight: 500;
+	line-height: 20px;
+	font-size: 18px;
 	padding-horizontal: 16px;
 	placeholder: ${({ theme }: { theme: DefaultTheme }) => theme.colors.black};
 	border-style: solid;

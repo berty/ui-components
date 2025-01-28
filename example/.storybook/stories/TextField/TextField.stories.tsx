@@ -8,17 +8,9 @@ const meta = {
 	component: TextField,
 	argTypes: {
 		onPress: { action: 'pressed the button' },
-		color: {
-			control: {
-				type: 'text',
-				options: ['primary', 'secondary'],
-				defaultValue: 'primary',
-			},
-		},
 	},
 	args: {
-		color: 'primary',
-		children: 'Primary Button',
+		children: 'Text Field Content',
 		placeholder: 'Placeholder Text',
 	},
 	decorators: [
