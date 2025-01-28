@@ -6,6 +6,12 @@ const theme: DefaultTheme = {
 	colors: {
 		black: '#000000',
 	},
+	textinputs: {
+		background: '#5999fa',
+		placeholder: {
+			color: '#535AE4',
+		},
+	},
 	buttons: {
 		primary: '#000000',
 		secondary: '#E5E5E5',

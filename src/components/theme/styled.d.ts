@@ -11,6 +11,13 @@ declare module 'styled-components/native' {
 			}
 		}
 
+		textinputs: {
+			background: string
+			placeholder: {
+				color: string
+			}
+		}
+
 		colors: {
 			black: string
 		}

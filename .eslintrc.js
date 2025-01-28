@@ -14,7 +14,7 @@ module.exports = {
 		'no-spaced-func': 0,
 		'react/react-in-jsx-scope': 2,
 		'import/order': [
-			2,
+			0,
 			{
 				groups: [['builtin', 'external'], 'internal', ['sibling', 'parent', 'index'], 'object', 'type'],
 				pathGroups: [
