@@ -1,9 +1,10 @@
 import { DefaultTheme, ThemeProvider } from 'styled-components'
+import { ErrorBox } from './components/alert'
 import { Button } from './components/buttons'
-import { Container } from './components/layout/Container'
-import { H1 } from './components/text'
+import { Container, BottonPanel, Spacer } from './components/layout'
+import { H1, H2, Body } from './components/text'
 import { TextField } from './components/textFields/TextField'
 
-export const Text = { H1 }
+export const Text = { H1, H2, Body }
 
-export { ThemeProvider, DefaultTheme, Button, TextField, Container }
+export { ThemeProvider, DefaultTheme, Button, TextField, Container, BottonPanel, Spacer, ErrorBox }

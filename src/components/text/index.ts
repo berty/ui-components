@@ -9,6 +9,20 @@ export const H1 = styled.Text`
 	color: ${(props: DefaultTheme) => props.theme.colors.black};
 `
 
+export const H2 = styled.Text`
+	font-weight: 400;
+	font-size: 22px;
+	letter-spacing: -0.32px;
+	color: ${(props: DefaultTheme) => props.theme.colors.primary};
+`
+
+export const Body = styled.Text`
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: -0.32px;
+	color: ${(props: DefaultTheme) => props.theme.colors.black};
+`
+
 export const ButtonLabel = styled.Text<{ $color?: ButtonColor }>`
 	font-weight: 500;
 	font-size: 16px;

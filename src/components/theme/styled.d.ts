@@ -2,6 +2,10 @@ import 'styled-components/native'
 
 declare module 'styled-components/native' {
 	export interface DefaultTheme {
+		borderRadius: number
+
+		error: { background: string; text: string }
+
 		buttons: {
 			primary: string
 			secondary: string
@@ -20,6 +24,7 @@ declare module 'styled-components/native' {
 
 		colors: {
 			black: string
+			white: string
 		}
 	}
 }
