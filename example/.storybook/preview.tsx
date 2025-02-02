@@ -24,9 +24,11 @@ const theme: DefaultTheme = {
 	buttons: {
 		primary: '#000000',
 		secondary: '#E5E5E5',
+		tertirary: '#4c8ae7',
 		label: {
 			primary: '#ffffff',
 			secondary: '#000000',
+			tertirary: '#000000',
 		},
 	},
 }

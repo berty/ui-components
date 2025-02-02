@@ -3,8 +3,7 @@ import { TouchableOpacity, TouchableOpacityProps } from 'react-native'
 import styled from 'styled-components/native'
 import { DefaultTheme } from 'styled-components/native'
 import * as Text from '../text'
-
-export type ButtonColor = 'primary' | 'secondary'
+import { ButtonColor } from './index'
 
 export interface Button extends TouchableOpacityProps {
 	children: React.ReactNode

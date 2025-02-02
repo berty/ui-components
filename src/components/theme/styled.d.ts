@@ -9,9 +9,12 @@ declare module 'styled-components/native' {
 		buttons: {
 			primary: string
 			secondary: string
+			tertirary: string
+
 			label: {
 				primary: string
 				secondary: string
+				tertirary: string
 			}
 		}
 
@@ -23,6 +26,8 @@ declare module 'styled-components/native' {
 		}
 
 		colors: {
+			primary: string
+
 			black: string
 			white: string
 		}

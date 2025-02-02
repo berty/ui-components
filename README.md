@@ -10,7 +10,6 @@ npm install @berty/ui-components
 
 ## Usage
 
-
 ```js
 import { Button, DefaultTheme, Text, ThemeProvider } from '@berty/ui-components'
 
@@ -22,7 +21,6 @@ import { Button, DefaultTheme, Text, ThemeProvider } from '@berty/ui-components'
 </ThemeProvider>
 
 ```
-
 
 ## Contributing
 

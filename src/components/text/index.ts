@@ -1,5 +1,6 @@
+import { TextProps } from 'react-native'
 import styled, { DefaultTheme } from 'styled-components/native'
-import { ButtonColor } from '../buttons/Button'
+import { ButtonColor } from '../../index'
 
 export const H1 = styled.Text`
 	font-weight: 400;
@@ -15,8 +16,9 @@ export const H2 = styled.Text`
 	letter-spacing: -0.32px;
 	color: ${(props: DefaultTheme) => props.theme.colors.primary};
 `
+export type H2 = typeof H2
 
-export const Body = styled.Text`
+export const Body = styled.Text<TextProps>`
 	font-weight: 400;
 	font-size: 16px;
 	letter-spacing: -0.32px;
