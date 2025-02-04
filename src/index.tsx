@@ -1,8 +1,8 @@
-import { DefaultTheme, ThemeProvider } from 'styled-components'
 import { ErrorBox } from './components/alert'
 import { Container, BottonPanel, Spacer } from './components/layout'
 import * as Text from './components/text'
 import { TextField } from './components/textFields/TextField'
+import { ThemeProvider, DefaultTheme } from './components/ui/ThemeProvider'
 
 export * from './components/surfaces'
 
